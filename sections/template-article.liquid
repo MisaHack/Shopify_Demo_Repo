@@ -1,6 +1,3 @@
-<head>
-  {{ content_for_header }}
-</head>
 
 <h1>{{ article.title }}</h1>
 
@@ -12,6 +9,22 @@
 
 <div class="">{{ article.content }}</div>
 
-<body>
-  {{ content_for_layout }}
-</body>
+{% schema %}
+  {
+    "name": "Template Article",
+    "settings": [
+      {
+        "type":"checkbox",
+        "id":"enable_author",
+        "default": true,
+        "label": "Display Author Name"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_published_date",
+        "default": true,
+        "label": "Display Published Date"
+      }
+    ]
+  }
+{% endschema %}
