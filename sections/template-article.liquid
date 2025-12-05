@@ -1,11 +1,14 @@
-
 <h1>{{ article.title }}</h1>
 
 <small>{{ article.author }}</small>
 
 <time datetime="{{ article.published_at |  date: '%Y-%m-%d'}}">{{ article.published_at |  date: '%Y-%m-%d'}}</time>
 
-<img src="{{ article.image | img_url: 'large'}}" alt="{{ article.image.alt }}">
+<img
+  src="{{ article.image | image_url: width: 960}}"
+  alt="{{ article.image.alt }}"
+  loading="lazy"
+>
 
 <div class="">{{ article.content }}</div>
 
