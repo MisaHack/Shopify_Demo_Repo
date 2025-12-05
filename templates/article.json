@@ -11,7 +11,44 @@
   "sections": {
     "template": {
       "type": "template-article",
-      "settings": {}
+      "blocks": {
+        "article_title_yyYmDU": {
+          "type": "article_title",
+          "settings": {}
+        },
+        "article_author_njhCAt": {
+          "type": "article_author",
+          "settings": {}
+        },
+        "article_published_date_qV8L4P": {
+          "type": "article_published_date",
+          "settings": {}
+        },
+        "featured_image_bBehJ9": {
+          "type": "featured_image",
+          "settings": {}
+        },
+        "featured_image_RPc7Vk": {
+          "type": "featured_image",
+          "settings": {}
+        },
+        "article_content_mb68LE": {
+          "type": "article_content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "article_title_yyYmDU",
+        "article_author_njhCAt",
+        "article_published_date_qV8L4P",
+        "featured_image_bBehJ9",
+        "featured_image_RPc7Vk",
+        "article_content_mb68LE"
+      ],
+      "settings": {
+        "enable_author": true,
+        "enable_published_date": true
+      }
     }
   },
   "order": [
