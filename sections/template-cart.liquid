@@ -56,7 +56,7 @@
                     </div>
                     <div class="w-full my-4 md:w-80">
                         {% for block in section.blocks %}
-                            {% case variable %}
+                            {% case block.type %}
                                 {% when 'subtotal' %}
                                     <h3 class="text-xl">Subtotal: {{ cart.total_price | money }}</h3>
                                 {% when 'update_button' %}
