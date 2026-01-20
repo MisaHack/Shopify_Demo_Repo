@@ -5,6 +5,8 @@
         {% endif %}
 
         <a href="{{ product.url }}">{{ product.title }}</a>
+
+        <p>{{ product.price | money }}</p>
     {% else %}
         <p>There are no products inside of this collection</p>
     {% endfor %}
