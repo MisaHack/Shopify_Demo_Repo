@@ -38,7 +38,9 @@
     "contact_form_VgCtjc": {
       "type": "contact-form",
       "name": "Contact Form",
-      "settings": {}
+      "settings": {
+        "title": "Contact Form"
+      }
     }
   },
   "order": [
