@@ -3,7 +3,7 @@
         <img src="{{ media | img_url: 'large' }}" alt="{{ media.preview_image.alt }}" class="w-full h-full object-cover">
 
     {% when 'external-video' %}
-        {{ media |  external_video_tag: class: 'w-full h-80 object-cover' }}
+        {{ media |  external_video_tag: class: 'w-full h-full object-cover' }}
 
     {% when 'video' %}
         {{ media |  video_tag: controls: true, class: 'w-full h-full object-cover' }}
