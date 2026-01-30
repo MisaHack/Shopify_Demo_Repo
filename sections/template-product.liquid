@@ -175,6 +175,11 @@
 
             console.log(this.currentVariant);
         }
+
+        updateURL(){
+            if(!this.currentVariant) return;
+            window.history.replaceState({}, '', `$(this.dataset.url)?variant=$(this.currentVariant.id)`);
+        }
     }
 
     customElements.define("variant-selector", VariantSelector);
