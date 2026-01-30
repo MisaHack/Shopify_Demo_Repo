@@ -73,7 +73,7 @@
                                     <select
                                         name="options[{{ option.name | escape }}]"
                                         id="Option-{{ section.id }}-{{ forloop.index0 }}"
-                                        class="w-full border py-1 px-3"
+                                        class="w-full border py-3 px-3"
                                     >
                                         {% for value in option.values %}
                                             <option
@@ -86,6 +86,14 @@
                                             </option>
                                         {% endfor %}
                                     </select>
+                                </div>
+
+                                <div class="my-3">
+                                    <label for="Quantity-{{ section.id }}">Quantity</label>
+
+                                    <div class="my-2">
+                                        <input type="number" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" class="w-full border px-3 py-3">
+                                    </div>
                                 </div>
                             {% endfor %}
                         </div>
