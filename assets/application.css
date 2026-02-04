@@ -518,6 +518,9 @@
       margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .gap-x-6 {
+    column-gap: calc(var(--spacing) * 6);
+  }
   .space-x-5 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -534,6 +537,9 @@
   }
   .gap-y-7 {
     row-gap: calc(var(--spacing) * 7);
+  }
+  .gap-y-10 {
+    row-gap: calc(var(--spacing) * 10);
   }
   .divide-y {
     :where(& > :not(:last-child)) {
@@ -957,6 +963,11 @@
       display: inline;
     }
   }
+  .sm\:grid-cols-2 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .sm\:gap-8 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 8);
@@ -1140,9 +1151,19 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
+  .lg\:grid-cols-4 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
   .lg\:px-8 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+  .xl\:gap-x-8 {
+    @media (width >= 80rem) {
+      column-gap: calc(var(--spacing) * 8);
     }
   }
 }
