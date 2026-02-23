@@ -19,6 +19,7 @@
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-800: oklch(42.4% 0.199 265.638);
+    --color-blue-900: oklch(37.9% 0.146 265.522);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
@@ -956,6 +957,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-blue-800);
+      }
+    }
+  }
+  .hover\:text-blue-900 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-900);
       }
     }
   }
