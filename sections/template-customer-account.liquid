@@ -22,7 +22,7 @@
 
                                 <div class="mt-4 flex items-start justify-beetween">
                                     <div>
-                                        <h3 class="text-sm text-gray-700"><a href="{{ order.name | link_to: order.customer_url}}"></a></h3>
+                                        <h3 class="text-sm text-gray-700">{{ order.name | link_to: order.customer_url }}</h3>
 
                                         <p class="mt-1 text-sm text-gray-500">{{ order.financial_status_label }}</p>
                                     </div>
