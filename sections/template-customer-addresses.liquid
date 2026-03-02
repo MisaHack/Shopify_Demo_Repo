@@ -104,6 +104,13 @@
 
                 <div class="mb-4">
                     <label for="address_zip_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Postal/ZIP code</label>
+                    <input
+                        type="text"
+                        name="address[zip]"
+                        id="address_zip_{{ form.id }}"
+                        value="{{ form.zip }}"
+                        class="w-full text-gray-700 border px-4 py-3 focus:outline-none"
+                    >
                 </div>
             {% endform %}
         </div>
