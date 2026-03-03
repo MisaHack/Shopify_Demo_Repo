@@ -212,14 +212,16 @@
         }
 
         getSelectedCountry(select){
-            var option, selectOption;
+            var option, selectedOption;
             for(var index = 0; index < select.options.length; index++){
                 option = select.options[index];
 
                 if(option.value === select.getAttribute('value')){
-                    selectOption = option;
+                    selectedOption = option;
                     selectedOption.setAttribute('selected', 'selected');
                     break;
+
+                    //24:40
                 }
             }
 
