@@ -1,6 +1,6 @@
 {
     "sections":{
-        "template": {"type" : "template-cusomer-activate-account"}
+        "template": {"type" : "template-customer-activate-account"}
     },
     "order": ["template"]
 }
