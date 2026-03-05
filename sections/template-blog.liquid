@@ -10,7 +10,14 @@
                         <div class="bg-white shadow-xl rounded-lg overflow-hidden">
                             {% if article.image %}
                                 <a href="{{ article.url }}">
-                                    <img class="w-full h-80 object-cover" src="{{ article.image |  image_url: width:960 }}" alt="{{ article.image.alt }}">
+                                    {{ article.image
+                                        | image_url: width: 960
+                                        | image_tag:
+                                            class: "w-full h-80 object-cover",
+                                            alt: article.image.alt,
+                                            width: 960,
+                                            height: 320
+                                    }}
                                 </a>
                             {% else %}
                                 {{ 'image' |  placeholder_svg_tag: 'w-full h-80 object-cover bg-gray-100' }}
